@@ -12,11 +12,14 @@ import {
 //Pages
 import Home from '../src/components/pages/Home';
 import PageOne from '../src/components/pages/PageOne';
+//Header
+import Header from '../src/components/Global/Header';
 
 function App() {
   return (
     <div className="App">
     <Router>
+    <Header />
       <Switch>
       <Redirect exact from="/" to="/home" />
         <Route
